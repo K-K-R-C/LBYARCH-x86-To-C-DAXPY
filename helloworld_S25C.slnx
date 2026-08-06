@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="helloworld_S25C/helloworld_S25C.vcxproj" Id="b2ea66c2-4f22-4a7f-a848-adc79a77189c" />
+</Solution>
