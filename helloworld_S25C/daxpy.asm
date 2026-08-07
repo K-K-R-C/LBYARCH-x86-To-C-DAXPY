@@ -1,4 +1,4 @@
-%include "io64.inc"
+; %include "io64.inc"
 
 section .data
 

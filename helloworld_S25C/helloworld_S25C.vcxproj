@@ -147,8 +147,11 @@
     <CustomBuild Include="daxpy.asm">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
       <FileType>Document</FileType>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Karl\Desktop\nasm.exe -f win64 daxpy.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\NASM\nasm.exe -f win64 daxpy.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">daxpy.obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\NASM\nasm.exe -f win64 daxpy.asm</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">daxpy.obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
     </CustomBuild>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
