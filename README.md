@@ -41,4 +41,36 @@ Correctness check: PASS for all sizes
 Correctness check: PASS for all sizes
 
 ## Analysis
+yada yada yada (edit this pls)
+ 
+## Screenshots
+ 
+### Debug Mode Output
+Size: 2^20
 
+![C Output](images/debug_20.png)
+
+Size: 2^24
+
+![C Output](images/debug_24.png)
+
+Size: 2^28
+
+![C Output](images/debug_28.png)
+
+----
+
+### Release Mode Output
+Size: 2^20
+
+![C Output](images/release_20.png)
+
+Size: 2^24
+
+![C Output](images/release_24.png)
+
+Size: 2^28
+
+![C Output](images/release_28.png)
+
+ 
