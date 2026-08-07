@@ -41,7 +41,15 @@ Correctness check: PASS for all sizes
 Correctness check: PASS for all sizes
 
 ## Analysis
-yada yada yada (edit this pls)
+From here, the results show that both C and x86-64 assembly versions are working correctly, because the correctness check passed for all vector sizes. 
+
+For Debug mode, the assembly version was faster than the C version in all tests, because Debug mode doesn't apply many compiler optimizations, so C just runs less efficiently, while the assembly version on the other hand directly uses scalar SIMD instructions (like 'MOVSD', 'MULSD', 'ADDSD'), helping it perform better.
+
+Now, for Release mode, the difference between the C and assembly versions became smaller. The C compiler this time now applies optimizations during Release mode, which improves the C kernel's performance, and so allows it to match or even perform better than the assembly version in some cases.
+
+For bigger vector sizes, we can also see that both versions take more time because they need to process and move more data. At this point, performance is affected not only by the calculations, but also by how fast the data can be accessed from memory.
+
+Overall, the x86-64 assembly version met the requirements by using scalar SIMD instructions and also showed good performance, especially in Debug mode. But, the Release mode results show that optimized C code can also perform very well compared to manually written assembly.
  
 ## Screenshots
  
