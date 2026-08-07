@@ -6,7 +6,7 @@
 - **CAMATO, Karl Kristoffer R.**
 
 ## Video Demo
-Link: 
+Link: [Demo](https://drive.google.com/file/d/1WsiPSiHpXBM6GHUMWeATjaBNYdYP0G6U/view?usp=sharing)
 
 ## What this project does
 This program implements DAXPY (Z[i] = A * X[i] + Y[i]) in two versions:
